@@ -76,8 +76,29 @@
   object-fit: fill;
 }
 
-.Lap-Container{
+.Lap-Container {
   width: 100%;
   height: 150px;
   background-color: transparent;
+  display: flex;
+  flex-direction: column-reverse;
+  overflow: scroll;
+}
+.Lap-Container::-webkit-scrollbar {
+  width: 0;
+  background-color: transparent;
+}
+
+.Lap-Container::-webkit-scrollbar-thumb,
+.Lap-Container::-webkit-scrollbar-thumb:hover,
+.Lap-Container::-webkit-scrollbar-track,
+.Lap-Container::-webkit-scrollbar-track:hover  {
+  background-color: transparent;
+}
+
+
+.Laps{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }

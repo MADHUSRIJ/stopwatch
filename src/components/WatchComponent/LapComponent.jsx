@@ -1,10 +1,12 @@
 import React from "react";
 
-function LapComponent(){
+function LapComponent({childComponents}){
 
     return(
         <div className="Lap-Container">
-
+            {childComponents.map((ChildComponent, index) => (
+                 ChildComponent
+            ))}
         </div>
     );
 }
