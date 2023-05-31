@@ -1,0 +1,22 @@
+.App {
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(27, 0, 53, 0.317);
+}
+
+.Main{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.Mobile-Div{
+  height: 500px;
+  width: 300px;
+  background-color: white;
+  border: 2px solid black;
+}
