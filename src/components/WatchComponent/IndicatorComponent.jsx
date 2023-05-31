@@ -1,11 +1,13 @@
 import React from "react";
 
-export const IndicatorComponent = () => {
-
+function IndicatorComponent({Duration, Timer}) {
     return(
-        <div className="indicator-main">
-            Hello
+        <div className="Indicator-Container">
+            <div className="Duration-Text">{Duration}</div>
+            <div className="Timer-Text">{Timer}</div>
         </div>
     );
 
 }
+
+export default IndicatorComponent;

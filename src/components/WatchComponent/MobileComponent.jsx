@@ -1,10 +1,12 @@
 import React from "react";
 import '../../App.css'
 
-function MobileComponent({ChildComponent}){
+function MobileComponent({childComponents}){
     return(
-        <div className="Mobile-Div">
-            <ChildComponent />
+        <div className="Mobile-Container">
+           {childComponents.map((ChildComponent, index) => (
+                 ChildComponent
+            ))}
         </div>
     );
 };

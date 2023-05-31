@@ -2,21 +2,82 @@
   text-align: center;
   height: 100vh;
   width: 100vw;
-  background-color: rgba(27, 0, 53, 0.317);
+  background: linear-gradient(to bottom, #5fead185, rgba(255, 255, 255, 0.272));
+  caret-color: transparent;
+  color: white;
+  font-family: Century Gothic;
 }
 
-.Main{
+.Main-Container{
   height: 100vh;
   width: 100vw;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-wrap: wrap;
 }
 
-.Mobile-Div{
+.Mobile-Container{
+  position: relative;
   height: 500px;
-  width: 300px;
-  background-color: white;
-  border: 2px solid black;
+  width: 260px;
+  background-color: #131723;
+  border: none;
+  box-shadow: 2px 2px 2px 2px #13172325;
+  border-radius: 20px;
+  padding: 30px 20px 70px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Indicator-Container{
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background-color: #1F2633;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 30px 0px 20px 0px;
+}
+
+.Duration-Text{
+  font-size: 30px;
+}
+
+.Timer-Text{
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.518);
+}
+
+.Buttons-Container{
+  position: absolute;
+  bottom: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.Button{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Button img{
+  width: 50%;
+  height: 50%;
+  object-fit: fill;
+}
+
+.Lap-Container{
+  width: 100%;
+  height: 150px;
+  background-color: transparent;
 }
